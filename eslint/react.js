@@ -1,12 +1,12 @@
-const { rules } = require('./index')
+const def = require('./index')
 
 module.exports = {
+    ...def,
     extends: [
-        'airbnb', // 推荐规则
+        // eslint-config-airbnb
+        'airbnb',
         'airbnb/hooks',
+        // eslint-config-prettier
         'prettier',
     ],
-    rules: {
-        ...rules,
-    },
 }

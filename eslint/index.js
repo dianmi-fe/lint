@@ -1,11 +1,14 @@
 module.exports = {
     root: true,
     extends: [
+        // eslint-config-airbnb-base
         'airbnb-base',
-        'prettier', // 过滤与 prettier 冲突的规则
+        // eslint-config-prettier
+        'prettier',
     ],
     plugins: [
-        'prettier', // 用于 prettier 的错误提示
+        // eslint-plugin-prettier
+        'prettier',
     ],
     parserOptions: {
         ecmaVersion: 11,
@@ -30,7 +33,9 @@ module.exports = {
         TcPlayer: false,
     },
     rules: {
-        'prettier/prettier': 'error', // 用于 prettier 的错误提示
+        // eslint-plugin-prettier
+        'prettier/prettier': 'error',
+
         'no-console': 'off',
 
         // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback

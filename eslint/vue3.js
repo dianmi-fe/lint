@@ -1,34 +1,15 @@
-const { rules } = require('./index')
+const def = require('./vue')
 
 module.exports = {
+    ...def,
     extends: [
+        // eslint-config-airbnb-base
         'airbnb-base',
-        'plugin:vue/vue3-recommended', // vue 推荐规则
-        'plugin:vue/vue3-strongly-recommended', // vue 推荐规则
-        'plugin:vue/vue3-essential', // vue 推荐规则
+        // eslint-plugin-vue
+        'plugin:vue/vue3-recommended',
+        'plugin:vue/vue3-strongly-recommended',
+        'plugin:vue/vue3-essential',
+        // eslint-config-prettier
         'prettier',
     ],
-    parser: 'vue-eslint-parser',
-    parserOptions: {
-        ecmaVersion: 11,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-        },
-    },
-    rules: {
-        ...rules,
-        'vue/html-self-closing': [
-            'error',
-            {
-                html: {
-                    normal: 'always',
-                    void: 'always',
-                    component: 'always',
-                },
-                svg: 'always',
-                math: 'always',
-            },
-        ],
-    },
 }
