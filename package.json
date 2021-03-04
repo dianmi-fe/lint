@@ -1,7 +1,7 @@
 {
     "name": "@dianmi-fe/lint",
     "version": "1.0.0",
-    "description": "prettier, eslint and stylelint",
+    "description": "prettier, eslint and stylelint config of dianmi-fe",
     "main": "index.js",
     "scripts": {
         "eslint-check": "eslint-config-prettier-check",
@@ -13,11 +13,21 @@
         "stylelint",
         "index.js"
     ],
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "keywords": [
+        "dianmi",
+        "lint",
+        "prettier",
+        "eslint",
+        "stylelint"
+    ],
+    "author": "daaashan",
+    "license": "MIT",
+    "peerDependencies": {
+        "eslint": "^7.0.0",
+        "stylelint": "^13.0.0",
+        "prettier": "^2.0.0"
+    },
     "dependencies": {
-        "eslint": "^7.20.0",
         "eslint-config-airbnb": "^18.2.1",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-config-prettier": "^8.1.0",
@@ -27,8 +37,6 @@
         "eslint-plugin-react": "^7.22.0",
         "eslint-plugin-react-hooks": "^4.2.0",
         "eslint-plugin-vue": "^7.6.0",
-        "prettier": "^2.2.1",
-        "stylelint": "^13.10.0",
         "stylelint-config-prettier": "^8.0.2",
         "stylelint-config-rational-order": "^0.1.2",
         "stylelint-config-standard": "^20.0.0",
@@ -38,6 +46,9 @@
         "vue-eslint-parser": "^7.5.0"
     },
     "devDependencies": {
-        "react": "^17.0.1"
+        "eslint": "^7.20.0",
+        "prettier": "^2.2.1",
+        "react": "^17.0.1",
+        "stylelint": "^13.10.0"
     }
 }

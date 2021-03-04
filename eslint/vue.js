@@ -1,34 +1,36 @@
-const { rules } = require('./index')
+const def = require('./index')
 
 module.exports = {
+    ...def,
     extends: [
+        // eslint-config-airbnb-base
         'airbnb-base',
-        'plugin:vue/recommended', // vue 推荐规则
-        'plugin:vue/strongly-recommended', // vue 推荐规则
-        'plugin:vue/essential', // vue 推荐规则
+        // eslint-plugin-vue
+        'plugin:vue/recommended',
+        'plugin:vue/strongly-recommended',
+        'plugin:vue/essential',
+        // eslint-plugin-import
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        // eslint-config-prettier
         'prettier',
     ],
     parser: 'vue-eslint-parser',
-    parserOptions: {
-        ecmaVersion: 11,
-        sourceType: 'module',
-        ecmaFeatures: {
-            jsx: true,
-        },
-    },
     rules: {
-        ...rules,
+        ...def.rules,
+
+        // eslint-plugin-import
+        'import/prefer-default-export': 'off',
+
+        // eslint-plugin-vue
         'vue/html-self-closing': [
             'error',
             {
                 html: {
-                    normal: 'always',
-                    void: 'always',
-                    component: 'always',
+                    void: 'any',
                 },
-                svg: 'always',
-                math: 'always',
             },
         ],
+        'vue/padding-line-between-blocks': ['error', 'always'],
     },
 }
