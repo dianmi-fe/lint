@@ -4,24 +4,24 @@ module.exports = {
         // eslint-config-airbnb-base
         'airbnb-base',
         // eslint-config-prettier
-        'prettier',
+        'prettier'
     ],
     plugins: [
         // eslint-plugin-prettier
-        'prettier',
+        'prettier'
     ],
     parserOptions: {
         ecmaVersion: 11,
         sourceType: 'module',
         ecmaFeatures: {
-            jsx: true,
-        },
+            jsx: true
+        }
     },
     env: {
         es6: true,
         browser: true,
         node: true,
-        mocha: true,
+        mocha: true
     },
     globals: {
         getApp: false,
@@ -30,16 +30,16 @@ module.exports = {
         VueRouter: false,
         PushStream: false,
         TIM: false,
-        TcPlayer: false,
+        TcPlayer: false
     },
     rules: {
         // eslint-plugin-prettier
         'prettier/prettier': 'error',
 
-        'no-console': 'off',
+        'no-console': 'off'
 
         // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
         // 'arrow-body-style': 'off',
         // 'prefer-arrow-callback': 'off',
-    },
+    }
 }

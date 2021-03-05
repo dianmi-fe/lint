@@ -13,7 +13,7 @@ module.exports = {
         'plugin:import/errors',
         'plugin:import/warnings',
         // eslint-config-prettier
-        'prettier',
+        'prettier'
     ],
     parser: 'vue-eslint-parser',
     rules: {
@@ -27,10 +27,9 @@ module.exports = {
             'error',
             {
                 html: {
-                    void: 'any',
-                },
-            },
-        ],
-        'vue/padding-line-between-blocks': ['error', 'always'],
-    },
+                    void: 'any'
+                }
+            }
+        ]
+    }
 }

@@ -10,6 +10,6 @@ module.exports = {
         'plugin:vue/vue3-strongly-recommended',
         'plugin:vue/vue3-essential',
         // eslint-config-prettier
-        'prettier',
-    ],
+        'prettier'
+    ]
 }

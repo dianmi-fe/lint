@@ -7,12 +7,12 @@ module.exports = {
     semi: false,
     singleQuote: true,
     quoteProps: 'as-needed', // 对象属性引号规则
-    trailingComma: 'all', // 多行时尽可能打印尾随逗号
+    trailingComma: 'none', // 多行时尽可能打印尾随逗号
     proseWrap: 'never', // ???
     endOfLine: 'lf',
 
-    arrowParens: 'always', // default
-    jsxSingleQuote: false, // default
-    jsxBracketSameLine: false, // default
     bracketSpacing: true, // default
+    arrowParens: 'avoid', // default
+    jsxSingleQuote: false, // default
+    jsxBracketSameLine: false // default
 }

@@ -7,6 +7,6 @@ module.exports = {
         'airbnb',
         'airbnb/hooks',
         // eslint-config-prettier
-        'prettier',
-    ],
+        'prettier'
+    ]
 }
