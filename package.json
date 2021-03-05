@@ -24,7 +24,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git@github.com:youzan/vant.git"
+        "url": "git@github.com:dianmi-fe/lint.git"
     },
     "peerDependencies": {
         "eslint": "^7.0.0",
