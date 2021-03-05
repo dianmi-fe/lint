@@ -1,6 +1,6 @@
 {
     "name": "@dianmi-fe/lint",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "prettier, eslint and stylelint config of dianmi-fe",
     "main": "index.js",
     "scripts": {
