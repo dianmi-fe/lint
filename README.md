@@ -65,7 +65,7 @@ module.exports = require('@dianmi-fe/lint/eslint/react')
 ### 必不可少的 vscode 配置
 
 ##### 1. 项目根目录创建 .vscode/settings.json, 粘贴以下 json
-```json
+```javascript
 {
     "files.eol": "\n",
     "editor.tabSize": 4,
@@ -91,7 +91,7 @@ module.exports = require('@dianmi-fe/lint/eslint/react')
 ```
 
 ##### 2. 根据下面的视频打开文件位置, 粘贴以下 json
-```json
+```javascript
 [
     {
         "key": "ctrl+f", // 可修改为自己的快捷键
